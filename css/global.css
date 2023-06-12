@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    background-color: #222020;
+    overflow: hidden;
+    scroll-behavior: hidden;
+}
+
+@font-face {
+    font-family: connection;
+    src: url(../fonts/connection.ttf);
+}
+
+@font-face {
+    font-family: techno;
+    src: url(../fonts/techno.ttf);
+}
+
+#header {
+    width: 70%;
+    height: 18vw;
+    float: right;
+    margin-top: 0;
+}
+
+#MenuContainer {
+    width: 29.85%;
+    height: 200vw;
+    border: .1vw solid #121212;
+}
+
+.Menu {
+    background-color: #121212;
+    border-radius: 25px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#TopMenu {
+    height: 22vw;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#NavTitle {
+    font-family: connection;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+}
+
+.Link {
+    font-family: techno;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+    margin-top: 40px;
+    margin-left: 3vw;
+    animation: NavOver .3s ease-in-out forwards;
+
+}
+
+.Link:hover {
+    animation: NavHover .3s ease-in-out forwards;
+}
+
+@keyframes NavHover {
+    from {
+        margin-left: 75px;
+        color: white;
+    }
+
+    to {
+        margin-left: 100px;
+        color: yellow;
+    }
+}
+
+@keyframes NavOver {
+    from {
+        margin-left: 100px;
+        color: yellow;
+    }
+
+    to {
+        margin-left: 75px;
+        color: white;
+    }
+}
+
+#BotMenu {
+    height: 32vw;
+    margin-top: 2%;
+
+}
+
+.SongContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: transparent;
+
+}
+
+.album {
+    width: 2.8vw;
+    height: 2.8vw;
+    margin: 1vw;
+    animation: AlbumOver .3s ease-in-out forwards;
+}
+
+.album:hover {
+    animation: AlbumHover .3s ease-in-out forwards;
+}
+
+@keyframes AlbumHover {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .5;
+    }
+}
+
+@keyframes AlbumOver {
+    from {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.song {
+    font-family: techno;
+    font-size: .9vw;
+    color: white;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Adjustments for smaller screens */
+    #header {
+        width: 100%;
+        float: none;
+    }
+
+    #MenuContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .Link {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .album {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .song {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
