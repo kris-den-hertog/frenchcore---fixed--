@@ -1,0 +1,41 @@
+.TextContainer {
+    float: right;
+     width: 70%;
+     height: 37vw;
+     color: white;
+     font-family: techno;
+ }
+ .TextContainerLeft {
+     float: left;
+     width: 49%;
+     height: 37vw;
+     text-align: center;
+ }
+ .TextContainerRight {
+    
+     float: right;
+     width: 49%;
+     height: 37vw;
+     text-align: center;
+   
+ }
+ 
+ .text {
+     font-family: text;
+     font-size: 1vw;
+ }
+ .TextTitle {
+     font-size: 4vw;
+ }
+
+ 
+ .gap {
+     width: 40%;
+     height: 2vw;
+ }
+ iframe {
+    width: 30vw;
+    height: 20vw;
+    margin-top: 10vw;
+    border: none;
+ }

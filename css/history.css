@@ -1,0 +1,36 @@
+.TextContainer {
+    float: right;
+     width: 70%;
+     height: 37vw;
+     color: white;
+     font-family: techno;
+ }
+ .TextContainerLeft {
+     float: left;
+     width: 49%;
+     height: 37vw;
+     text-align: center;
+ }
+ .TextContainerRight {
+    
+     float: right;
+     width: 49%;
+     height: 37vw;
+     text-align: center;
+     margin-top: 9vw;
+   
+ }
+ 
+ .text {
+     font-family: text;
+     font-size: 1vw;
+ }
+ .TextTitle {
+     font-size: 4vw;
+ }
+
+ 
+ .gap {
+     width: 40%;
+     height: 2vw;
+ }

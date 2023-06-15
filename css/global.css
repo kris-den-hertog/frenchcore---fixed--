@@ -3,6 +3,7 @@ body {
     background-color: #222020;
     overflow: hidden;
     scroll-behavior: hidden;
+    
 }
 
 @font-face {
@@ -13,6 +14,10 @@ body {
 @font-face {
     font-family: techno;
     src: url(../fonts/techno.ttf);
+}
+@font-face {
+    font-family: text;
+    src: url(../fonts/text.ttf);
 }
 
 #header {
@@ -111,6 +116,12 @@ body {
 
 .album:hover {
     animation: AlbumHover .3s ease-in-out forwards;
+}
+.playlist:hover {
+    animation: AlbumHover .3s ease-in-out forwards;
+}
+.playlist {
+    animation: AlbumOver .3s ease-in-out forwards;
 }
 
 @keyframes AlbumHover {
